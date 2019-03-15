@@ -1,12 +1,13 @@
 //_________________________________________________________________________________
 //		    |    			<== MANIPULATE STYLES ==>						|
 //__________|_______________________________________________________________|______
-//
-//==[ Topics covered ]==
-//	+change an element style
-//	+Add / Remove a class
-//	+Change the content of a tag
-//	+Change the attribute (src,href,etc)
+//		    |==[ Topics covered ]==
+//		    |
+//		    |	+change an element style
+//		    |	+Add / Remove a class
+//		    |	+Change the content of a tag
+//		    |	+Change the attribute (src,href,etc)
+//__________|_______________________________________________________________|______
 
 
 //=[ With the style property ]=
@@ -20,6 +21,7 @@ tag.style.fontSize = "70px";
 tag.style.background = "yellow";
 tag.style.marginTop = "200px";
 
+
 //=[ With instead an css class already defined ]=
 //   This helps to organize style classes so as to avoid confusion between files overrides.
 
@@ -31,7 +33,6 @@ tag.classList.add("some-class");
 	//REMOVE A CLASS
 tag.classList.remove("some-class");
 
-	//TOGGLE A CLASS
+	//TOGGLE A CLASS : Add the class if the element doesn't have it already else turn it off 
 tag.classList.toggle("some-class");
-
 

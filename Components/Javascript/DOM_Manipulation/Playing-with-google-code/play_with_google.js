@@ -22,10 +22,6 @@ var links = document.getElementsByTagName("a");
 	//Use a loop as setAttribute works on an individual element
 for (var i = 0; i < links.length; i++) {
 	links[i].style.background = "pink";
+	links[i].style.border = "1px dashed purple";
 }
 	//==> all the links have a pink background
-
-
-
-
-
