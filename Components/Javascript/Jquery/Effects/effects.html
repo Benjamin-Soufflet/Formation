@@ -6,6 +6,7 @@
 
 	<style type="text/css">
 		.visible {
+			opacity: 1;
 			width: 100px;
 			height: 100px;
 			background: teal;
@@ -14,9 +15,8 @@
 			/*display: none;*/
 		}
 		.hidden {
-  			visibility: hidden;
   			opacity: 0;
-  			transition: visibility 0s 2s, opacity 1s linear;
+  			transition: opacity 2s;
 		}
 	</style>
 </head>
@@ -27,6 +27,8 @@
 <div class="visible">Please don't fade me!</div>
 <div class="visible">I'm begging you, please!</div>
 <div class="visible">Help help help!!</div>
+
+
 
 <script type="text/javascript" src="effects.js"></script>
 

@@ -11,10 +11,10 @@ $("button").click(function(){
 	$(this).css("background","green");
 });
 
-////---------With no JQuery click() 
-//document.querySelector("h1").addEventListener("click",function(){
-//alert("h1 clicked with no JQ");
-//})
+// //---------Pure JS click() 
+// document.querySelector("h1").addEventListener("click",function(){
+// alert("h1 clicked with no JQ");
+// })
 
 // //Click sur plusieurs boutons 
 // var buttons = document.querySelectorAll("button"); //Selection
@@ -25,14 +25,16 @@ $("button").click(function(){
 // 	});
 // }
 
-//================[  JQuery keypress() ]================ 
+
+//================[ keypress() ]================ 
+//---------JQuery 
 $("input").keypress(function(event){
 	if (event.which ===13) {
 		alert("You clicked enter");
 	}
 });
 
-// //Meme chose sans JQuery...
+////---------Vanilla JS  
 // var input = document.querySelector("input");
 // input.addEventListener("keypress",function(event){
 // 	if (event.which ===13) {
@@ -43,4 +45,10 @@ $("input").keypress(function(event){
 //================[    JQuery On()     ]================  
 $("h1").on("click",function(){
 	$(this).css("color","purple");
-})
+});
+
+// //---------Vanilla JS  
+// var h1 = document.querySelector("h1");
+// h1.addEventListener("click",function(){
+// 	this.style.color = "blue";
+// });
