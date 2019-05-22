@@ -53,22 +53,22 @@ myList.addEventListener("click", function(event){
 });
 
 //Task Completed
-// for (var i = 0; i < lis.length; i++) {
-//  	lis[i].addEventListener("click",function(){
-// 			this.classList.toggle("completed");
-// 	});
-// };
+for (var i = 0; i < lis.length; i++) {
+ 	lis[i].addEventListener("click",function(){
+			this.classList.toggle("completed");
+	});
+};
 //Deleted a task
-// for (var i = 0; i < trashBtn.length; i++) {
-// 	trashBtn[i].addEventListener("click", function(event){
-// 		//On va chercher les parents du span
-// 		//this.parentElement.parentElement.removeChild(this.parentElement);
-// 		var ul = this.parentElement.parentElement;
-// 		var li = this.parentElement;
-// 		ul.removeChild(li);
-// 		event.stopPropagation();
-// 	});
-// };
+for (var i = 0; i < trashBtn.length; i++) {
+	trashBtn[i].addEventListener("click", function(event){
+		//On va chercher les parents du span
+		//this.parentElement.parentElement.removeChild(this.parentElement);
+		var ul = this.parentElement.parentElement;
+		var li = this.parentElement;
+		ul.removeChild(li);
+		event.stopPropagation();
+	});
+};
 
 //Add a task
 var input = document.querySelector("input");
