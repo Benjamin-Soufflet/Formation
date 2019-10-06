@@ -1,0 +1,15 @@
+<!-- Inclusion du partial header-->
+<% include partials/header %>
+
+<h1> Vous avez demandé le service : <%= serviceVar %> </h1>
+
+<% if (serviceVar === "visite3d"){ %>
+    <p>Good Choice c'est la meilleure solution</p>
+<% } else { %>
+    <p>Pas de chance tu feras mieux la prochaine fois.</p>
+<% } %>
+
+<p>P.S. this is the service.ejs file ! <p>
+    
+    <!-- Inclusion du partial footer-->
+<% include partials/footer %>
