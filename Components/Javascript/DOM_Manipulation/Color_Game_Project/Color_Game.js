@@ -26,7 +26,7 @@ function setupModeButtons(){
 			modeButtons[0].classList.remove("selected");
 			modeButtons[1].classList.remove("selected");
 			this.classList.add("selected");
-			console.log(this.textContent);
+			console.log("mode selectionne :"this.textContent);
 			if (this.textContent === "EASY") {
 				numSquares = 3;
 			}else{

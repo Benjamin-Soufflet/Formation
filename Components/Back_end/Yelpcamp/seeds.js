@@ -24,43 +24,44 @@ var data = [
         }
     ];
 
+//old version without async
 function seedDB(){
 	//Supprimer toutes les annonces
 	Annonce.deleteMany({},function(err){
-//		if(err){
-//			console.log(err);
-//		} else {
-//			console.log("Annonces supprimées.");
-//			//Ajout des annonces de l'array data
-//			data.forEach(function(annonce){
-//				//Création d'une annonce
-//				Annonce.create(annonce,function(err,createdAnnonce){
-//					if(err){
-//						console.log(err);
-//					} else {
-//						//Annonce créée mais pas encore associée à l'annonce
-//						console.log("Annonce créée !");
-//						Commentaire.create(
-//							{
-//								texte: "C'est très beau !",
-//								auteur: "Homer"
-//							},
-//							function(err,createdCommentaire){
-//								if (err){
-//									console.log(err);
-//								} else {
-//									//On associe le commentaire à l'annonce
-//									createdAnnonce.commentaires.push(createdCommentaire);
-//									//Save en DB ensuite
-//									createdAnnonce.save();
-//									console.log("Commentaire créé et associé à l'annonce");
-//								}
-//							}
-//						);
-//					}
-//				});
-//			});
-//		}
+		if(err){
+			console.log(err);
+		} else {
+			console.log("Annonces supprimées.");
+			//Ajout des annonces de l'array data
+			data.forEach(function(annonce){
+				//Création d'une annonce
+				Annonce.create(annonce,function(err,createdAnnonce){
+					if(err){
+						console.log(err);
+					} else {
+						//Annonce créée mais pas encore associée à l'annonce
+						console.log("Annonce créée !");
+						Commentaire.create(
+							{
+								texte: "C'est très beau !",
+								auteur: "Homer"
+							},
+							function(err,createdCommentaire){
+								if (err){
+									console.log(err);
+								} else {
+									//On associe le commentaire à l'annonce
+									createdAnnonce.commentaires.push(createdCommentaire);
+									//Save en DB ensuite
+									createdAnnonce.save();
+									console.log("Commentaire créé et associé à l'annonce");
+								}
+							}
+						);
+					}
+				});
+			});
+		}
 	});
 }
 

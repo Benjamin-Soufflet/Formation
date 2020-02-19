@@ -5,7 +5,7 @@
 //appel au routeur d'express
 var express = require("express");
 var router = express.Router();
-//Middleware
+//Ajout Middleware
 var middleware = require("../middleware/index");
 
 //Ajout des modèles
