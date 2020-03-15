@@ -1,0 +1,16 @@
+<!-- Inclusion du partial header-->
+<% include partials/header %>
+
+
+<h1>The POSTs Pages</h1>
+
+<% for (var i=0; i< posts.length; i++){ %> 
+    <li> <%= posts[i].title %> - <%= posts[i].auteur %> </li>
+<% } %>
+
+<% posts.forEach(function(post){ %> 
+    <li> <%= post.title %> - <%= post.auteur %> </li>
+<% }) %>
+
+<!-- Inclusion du partial footer-->
+<% include partials/footer %>
