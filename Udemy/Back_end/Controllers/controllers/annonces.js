@@ -8,3 +8,8 @@ exports.annonces_show_all = function(req,res){
 	//Envoie des data à la vue
 			res.send("Hey On affiche toutes les annonces ici !");
 };
+
+exports.annonces_create = function(req,res){
+	//Envoie des data à la vue
+			res.send("Hey On affiche toutes les annonces ici !");
+};
